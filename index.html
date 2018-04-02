@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="calc.js">
+
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body ng-app="exmples" >
+<div ng-controller="myCtrl" class="container">
+	<div class="jumbotron">
+
+		<h1>Simple Calculator </h1>
+
+	</div>
+	<div class="row container col-md-12" >
+	<div class="form-group col-md-3"  >
+	<input class="form-control" type="text" col="col-md-3" ng-model="firstNumber" placeholder="Enter first number"> &nbsp;&nbsp;
+	</div>
+	<div class="col-md-3" >
+	<input class="form-control" type="text" ng-model="secondNumber"  placeholder="Enter the second number">  
+	</div>
+	<div class="col-md-1">
+	=
+	</div>
+	<div class="col-md-3">
+	 <input class="form-control" type="text" ng-model="Total" placeholder ="result is "> 
+	</div>
+	</div>
+	<br>
+	<br>
+	<div  class="row col-md-12 container">
+	
+	  <p class="container"> Choose operration: <button class="btn" ng-model="add" ng-click ="add();">+</button>
+	<button class="btn" ng-model="add" ng-click ="subtract();">-</button>
+	<button class="btn" ng-model="add" ng-click ="multiply();">*</button>
+	</p>
+	</div>
+	
+	
+	
+
+</div>
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+</style>
+
+<div class="container footer">
+  <p>Footer</p>
+</div>
+</doby>
+</html>
